@@ -56,21 +56,43 @@ for (word of word_list){clg(word)}
 // for 문
 for (let i=0;i<n ; i++){clg(i)}
 
-// for in 문 => 이건 객체에서 사용하는 것 
+// for in 문 => 이건 객체에서 사용하는 것
 
 // [0,0,0,0,0] 만들기
 new Array(5).fill(0)
 
-// findIndex 
+// findIndex
 
-
+array.findIndex((u)=>u.id ===id)
 
 ```
 
-# sort 
+# sort
 
-Object 를 Array 로 만들기 
+Object 를 Array 로 만들기
 const diceList = Object.entries(dice);
 diceList.sort((a, b) => b[1] - a[1]);
 
-people.sort((a,b)=>a.age -b.age) 
+people.sort((a,b)=>a.age -b.age)
+
+
+# keyof 
+keyof 는 개체 형식이다. a|b|c
+
+
+# keyof typeof
+
+typeof 를 사용하면, 객
+
+```js
+
+const colors = {
+  primary: "#1E88E5",
+  secondary: "#FFC107",
+  success: "#4CAF50",
+};
+
+export type ButtonColor = keyof (typeof colors);
+
+
+```
