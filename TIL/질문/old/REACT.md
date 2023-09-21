@@ -1,5 +1,3 @@
-# React 질문
-
 # REACT 란?
 
 - UI 구축을 위한 JS 라이브러리
